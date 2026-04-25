@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Domain</title>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+.domain-section{
+margin-top:30px;
+line-height:1.8;
+}
+
+.domain-section h3{
+color:#00d9ff;
+margin-top:20px;
+}
+
+.domain-section p{
+margin-top:10px;
+text-align:justify;
+}
+
+.domain-img{
+width:100%;
+max-width:600px;
+margin:20px 0;
+border-radius:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="logo-box">
+<img src="assets/logo.png" class="logo-img">
+<h2>SafeLAN</h2>
+</div>
+
+
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="domain.html">Domain</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="documents.html">Documents</a>
+<a href="slides.html">Slides</a>
+</div>
+
+</nav>
+
+<div class="container">
+
+<h2>Domain</h2>
+
+<div class="domain-section">
+
+<h3>Literature Survey</h3>
+<p>
+Modern organizations rely heavily on Local Area Networks (LANs) for internal file sharing and communication. However, traditional authentication mechanisms such as passwords and role-based access control are no longer sufficient to protect sensitive data. According to the research, these methods only verify users at login and fail to provide continuous authentication, leaving systems vulnerable to insider threats and unauthorized access. :contentReference[oaicite:0]{index=0}
+</p>
+
+<p>
+Recent studies have introduced behavioral biometrics as a promising solution. Keystroke dynamics, which analyze typing patterns such as dwell time and flight time, have been widely used to identify users uniquely. Machine learning models like Support Vector Machines (SVM), Random Forest, and deep learning approaches such as CNN and RNN have significantly improved authentication accuracy. :contentReference[oaicite:1]{index=1}
+</p>
+
+
+
+<h3>Research Gap</h3>
+<p>
+Despite significant advancements, existing research lacks integration of multiple security mechanisms into a single adaptive system. Most systems focus only on behavioral biometrics without considering contextual attributes such as user role, device type, and login time. Furthermore, there is limited research focusing specifically on LAN-based environments, which require lightweight and offline-capable solutions.
+</p>
+
+<p>
+The comparison table in the research shows that previous studies lack features such as trust-score-based authentication, adaptive security mechanisms, and LAN-focused implementation. The proposed SafeLAN system addresses all these limitations by combining behavioral biometrics with contextual analysis and real-time trust scoring. :contentReference[oaicite:2]{index=2}
+</p>
+
+<img src="assets/research-gap.png" class="domain-img">
+
+<h3>Research Problem</h3>
+<p>
+Traditional LAN authentication systems rely on static verification methods, which authenticate users only once at login. This creates a major security gap because unauthorized users can gain access if credentials are compromised. Additionally, existing systems do not continuously monitor user behavior, making them ineffective against insider threats.
+</p>
+
+<p>
+The main problem addressed in this research is the lack of a dynamic and adaptive authentication system that can continuously validate user identity. The study aims to develop a solution that integrates behavioral biometrics, contextual attributes, and trust scoring to enhance security in LAN-based file systems. :contentReference[oaicite:3]{index=3}
+</p>
+
+<h3>Objectives</h3>
+<p>
+The primary objective of this research is to enhance LAN security by introducing a behavior-based authentication system. The system aims to replace static password-based authentication with a dynamic mechanism that continuously evaluates user identity.
+</p>
+
+<p>
+Specific objectives include analyzing keystroke patterns, developing a trust score model, implementing adaptive access control, and reducing insider threats. By achieving these objectives, the system ensures that only legitimate users can access sensitive files within the LAN environment. :contentReference[oaicite:4]{index=4}
+</p>
+
+<h3>Methodology</h3>
+<p>
+The proposed methodology involves multiple stages, including data collection, preprocessing, feature extraction, and model training. Behavioral data such as typing patterns are collected and analyzed using machine learning techniques. A hybrid model combining CNN and RNN is used to improve accuracy by capturing both spatial and temporal features.
+</p>
+
+<p>
+The system calculates a dynamic trust score based on user behavior and contextual attributes. If the trust score falls below a certain threshold, access is restricted or denied. This ensures continuous authentication and enhances overall system security. :contentReference[oaicite:5]{index=5}
+</p>
+
+
+
+<h3>Technologies Used</h3>
+<p>
+The SafeLAN system uses a combination of modern technologies, including Python for development, machine learning libraries such as TensorFlow and Scikit-learn for model training, and data processing tools like Pandas and NumPy. These technologies enable efficient data analysis and accurate behavioral modeling.
+</p>
+
+<p>
+Additionally, the system integrates secure file handling mechanisms, real-time monitoring, and logging capabilities to ensure data integrity and accountability. The use of advanced technologies makes the system scalable, reliable, and suitable for real-world applications in organizations. :contentReference[oaicite:6]{index=6}
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
