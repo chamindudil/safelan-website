@@ -313,3 +313,10 @@ opacity:1;
 transform:translateY(0);
 }
 }
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
