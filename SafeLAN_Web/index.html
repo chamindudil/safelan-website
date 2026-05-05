@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeLAN | Next-Gen LAN Security</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION: Sticky navbar with backdrop-filter (glassmorphism) for modern UI feel -->
+    <nav class="navbar">
+        <div class="logo-box">
+            <img src="assets/logo.png" class="logo-img" alt="SafeLAN Logo">
+            <h2>SafeLAN</h2>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="domain.html">Domain</a>
+            <a href="milestones.html">Milestones</a>
+            <a href="documents.html">Documents</a>
+            <a href="slides.html">Slides</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- HERO: Initial landing view with primary CTA and high-quality branding illustration -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Next-Gen Security for <span class="gradient-text">LAN File Systems</span></h1>
+            <p>A next-generation LAN security platform combining behavioral biometrics, machine learning–based anomaly
+                detection, and blockchain-powered audit logs for secure file access.</p>
+
+            <a href="https://github.com/Geshi00/SafeLAN_RP-25-26J-067.git" target="_blank" class="btn-download">
+                <span>⬇ Download SafeLAN</span>
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <div class="slider-wrapper hero-slider">
+                <button class="slide-btn prev">❮</button>
+                <div class="slider-container">
+                    <div class="slide active">
+                        <img src="assets/dashboard1.png" alt="Dashboard 1">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/dashboard2.png" alt="Dashboard 2">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/dashboard3.png" alt="Dashboard 3">
+                    </div>
+                </div>
+                <button class="slide-btn next">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE FEATURES: Grid layout highlighting the 4 main security research components -->
+    <section class="features">
+        <h2>Core Features</h2>
+
+        <div class="feature-grid">
+            <div class="feature-box">
+                <div class="icon">🔐</div>
+                <h3>Continuous Authentication</h3>
+                <p>Real-time behavior monitoring ensures continuous identity verification without interrupting user
+                    workflow.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="icon">📊</div>
+                <h3>Trust Score System</h3>
+                <p>Dynamic trust scoring based on user behavior patterns and historical access data.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="icon">💾</div>
+                <h3>Secure LAN Storage</h3>
+                <p>Advanced encryption and access control protocols for internal local area network file systems.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="icon">⛓️</div>
+                <h3>Blockchain Logging</h3>
+                <p>Immutable audit trails using blockchain technology to ensure complete transparency and data
+                    integrity.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="icon">🛡️</div>
+                <h3>Secure Gateway</h3>
+                <p>A hardened multi-layer authentication gateway providing a robust first line of defense.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DASHBOARD PREVIEW: Interactive slider showing system UI mockups -->
+    <section class="dashboards">
+        <h2>System Dashboard</h2>
+        <div class="slider-wrapper">
+            <button class="slide-btn prev">❮</button>
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="assets/dashboard1.png" alt="Dashboard 1">
+                </div>
+                <div class="slide">
+                    <img src="assets/dashboard2.png" alt="Dashboard 2">
+                </div>
+                <div class="slide">
+                    <img src="assets/dashboard3.png" alt="Dashboard 3">
+                </div>
+            </div>
+            <button class="slide-btn next">❯</button>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- SCRIPTS: Lenis for smooth scrolling and script.js for custom slider/form logic -->
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
