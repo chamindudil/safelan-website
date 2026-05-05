@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SafeLAN</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo-box">
+            <img src="assets/logo.png" class="logo-img" alt="SafeLAN Logo">
+            <h2>SafeLAN</h2>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="domain.html">Domain</a>
+            <a href="milestones.html">Milestones</a>
+            <a href="documents.html">Documents</a>
+            <a href="slides.html">Slides</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html" class="active">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <section style="min-height: 100vh; padding-top: 120px;">
+        <div class="container">
+            <span class="gradient-text"
+                style="font-weight: 800; text-transform: uppercase; letter-spacing: 2px; font-size: 14px;">— Get in
+                Touch</span>
+            <h1 style="font-size: 64px; color: var(--white); margin: 10px 0 20px;">Contact Us</h1>
+
+            <div class="contact-wrapper">
+                <!-- Left Side: Info -->
+                <div class="contact-info-card">
+                    <h2>Have a question about SafeLAN?</h2>
+                    <p>Contact the research group for information about the SafeLAN platform, its key features,
+                        technical implementation, or any project-related inquiries.</p>
+
+                    <div class="info-item">
+                        <div class="info-icon">✉</div>
+                        <div class="info-text">
+                            <span>Email</span>
+                            <a href="mailto:safelan.info@gmail.com" style="text-decoration: none; color: inherit;"><p>safelan.info@gmail.com</p></a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-text">
+                            <span>Phone Number</span>
+                            <a href="tel:0703183256" style="text-decoration: none; color: inherit;"><p>0703183256</p></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Form -->
+                <div class="contact-form-container">
+                    <form id="contact-form">
+                        <div class="contact-grid">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+
+                        <div class="contact-grid">
+                            <div class="form-group" style="grid-column: span 2;">
+                                <label for="contact_number">Contact Number</label>
+                                <input type="text" id="contact_number" placeholder="Your contact number" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="I hope you are doing well..."></textarea>
+                        </div>
+
+                        <button type="submit" id="submit-btn" class="btn-send" style="margin-top: 20px;">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUCCESS OVERLAY -->
+    <div class="success-overlay" id="success-overlay">
+        <div class="success-card">
+            <div class="check-icon">✓</div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. Our team will get back to you shortly.</p>
+            <button class="btn-download" style="margin-top: 30px; width: 100%; justify-content: center;"
+                onclick="closeSuccess()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function closeSuccess() {
+            document.getElementById('success-overlay').classList.remove('active');
+        }
+    </script>
+
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
